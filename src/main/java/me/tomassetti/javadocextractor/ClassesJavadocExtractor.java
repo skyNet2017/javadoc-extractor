@@ -16,7 +16,7 @@ import java.io.IOException;
 public class ClassesJavadocExtractor {
 
     public static void main(String[] args) {
-        File projectDir = new File("source_to_parse/");
+        File projectDir = new File("source_to_parse2/");
         new DirExplorer((level, path, file) -> path.endsWith(".java"), (level, path, file) -> {
             try {
                 new VoidVisitorAdapter<Object>() {
